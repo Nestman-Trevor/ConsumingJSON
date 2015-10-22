@@ -5,6 +5,11 @@
 //  Created by Trevor Nestman on 10/20/15.
 //  Copyright © 2015 Trevor Nestman. All rights reserved.
 //
+//  Todo:
+//  I plan on adding iCore to this program and having a history of previously searched cities
+//  I would also like to add a 5-7 day forecast
+//  Better asthetics would be nice too
+//
 
 import UIKit
 
@@ -45,25 +50,35 @@ class ViewController: UIViewController {
             }
             task.resume()
         }else{
-            self.cityDidLoadLabel.text = "Unable to reach server"
+            self.cityDidLoadLabel.text = "Error with sent paramaters"
         }
     }
     
     func setLabels(weatherData: NSData){
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(weatherData, options:NSJSONReadingOptions.MutableContainers) as! NSDictionary
+            // this is nice to see in the console so we know what the json looking like
             print(json)
+
             if let codeError = json[("cod")] as? String{
+                
                 if codeError == "404"{
                     self.cityDidLoadLabel.text = "ERROR 404\nCity Not Found"
                 }
-                else{
-                    self.cityDidLoadLabel.text = "City Loaded Successfully"
-                }
+            }else{
+                self.cityDidLoadLabel.text = "City Loaded Successfully"
             }
+            
             if let name = json[("name")] as? String {
+                //Set the name by default
                 self.cityNameLabel.text =  name
-                print("name" + name)
+            
+                //Now we'll try to get the country
+                if let sys = json[("sys")] as? NSDictionary {
+                    if let country = sys[("country")] as? String {
+                        self.cityNameLabel.text = name + ", " + country
+                    }
+                }
             }
             
             if let main = json[("main")] as? NSDictionary {
