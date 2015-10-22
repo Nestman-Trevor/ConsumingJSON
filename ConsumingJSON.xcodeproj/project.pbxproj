@@ -486,6 +486,7 @@
 				9AB65E771BD69E4000169D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AB65E781BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSONTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				9AB65E7A1BD69E4000169D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AB65E7B1BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSONUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +504,7 @@
 				9AB65E7D1BD69E4000169D3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
