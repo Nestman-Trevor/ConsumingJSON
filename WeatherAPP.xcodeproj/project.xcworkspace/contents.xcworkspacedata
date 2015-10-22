@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ConsumingJSON.xcodeproj">
+      location = "self:/Users/trevornestman/Documents/Apps/ConsumingJSON/WeatherAPP.xcodeproj">
    </FileRef>
 </Workspace>

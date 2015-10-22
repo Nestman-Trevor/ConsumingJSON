@@ -28,31 +28,24 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //searchableCity adjusts the user's input so it can make a proper request
     func searchableCity(city: String) -> String{
-        return city.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+        return city.stringByReplacingOccurrencesOfString(" ", withString: "%20") //replace all spaces with %20
     }
 
     func getWeatherData(urlString: String) {
-//        var url : NSURL = NSURL(string: urlString)!
-//        let session = NSURLSession.sharedSession()
-//        var task = session.dataTaskWithURL(url, completionHandler: {
-//            (data, response, error) -> Void in
-//            self.setLabels(data!)
-//        })
-//        task.resume()
-//        
-//        /*
+
         let url = NSURL(string: urlString)
+        print(url?.description)
         if url != nil{
             let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
                 dispatch_async(dispatch_get_main_queue(), {
                     self.setLabels(data!) //Error here :fatal error: unexpectedly found nil while unwrapping ...
-                    self.cityDidLoadLabel.text = "City loaded"
                 })
             }
             task.resume()
         }else{
-            self.cityDidLoadLabel.text = "Poop, didn't load"
+            self.cityDidLoadLabel.text = "Unable to reach server"
         }
     }
     
@@ -60,9 +53,17 @@ class ViewController: UIViewController {
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(weatherData, options:NSJSONReadingOptions.MutableContainers) as! NSDictionary
             print(json)
-            
+            if let codeError = json[("cod")] as? String{
+                if codeError == "404"{
+                    self.cityDidLoadLabel.text = "ERROR 404\nCity Not Found"
+                }
+                else{
+                    self.cityDidLoadLabel.text = "City Loaded Successfully"
+                }
+            }
             if let name = json[("name")] as? String {
-                cityNameLabel.text = name
+                self.cityNameLabel.text =  name
+                print("name" + name)
             }
             
             if let main = json[("main")] as? NSDictionary {
@@ -70,9 +71,9 @@ class ViewController: UIViewController {
                     //convert kelvin to farenhiet
                     let ft = (temp * 9/5 - 459.67)
                     
-                    let myString = ft.description
+                    let myString = Int(round(ft)).description
                     
-                    cityTempLabel.text = myString
+                    self.cityTempLabel.text = myString + "°F"
                     
                 }
             }

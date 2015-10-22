@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AB65E4C1BD69E4000169D3F"
-               BuildableName = "ConsumingJSON.app"
-               BlueprintName = "ConsumingJSON"
-               ReferencedContainer = "container:ConsumingJSON.xcodeproj">
+               BuildableName = "WeatherAPP.app"
+               BlueprintName = "WeatherAPP"
+               ReferencedContainer = "container:WeatherAPP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AB65E601BD69E4000169D3F"
-               BuildableName = "ConsumingJSONTests.xctest"
-               BlueprintName = "ConsumingJSONTests"
-               ReferencedContainer = "container:ConsumingJSON.xcodeproj">
+               BuildableName = "WeatherAPP.xctest"
+               BlueprintName = "WeatherAPPTests"
+               ReferencedContainer = "container:WeatherAPP.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9AB65E6B1BD69E4000169D3F"
-               BuildableName = "ConsumingJSONUITests.xctest"
-               BlueprintName = "ConsumingJSONUITests"
-               ReferencedContainer = "container:ConsumingJSON.xcodeproj">
+               BuildableName = "WeatherAPP.xctest"
+               BlueprintName = "WeatherAPPUITests"
+               ReferencedContainer = "container:WeatherAPP.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AB65E4C1BD69E4000169D3F"
-            BuildableName = "ConsumingJSON.app"
-            BlueprintName = "ConsumingJSON"
-            ReferencedContainer = "container:ConsumingJSON.xcodeproj">
+            BuildableName = "WeatherAPP.app"
+            BlueprintName = "WeatherAPP"
+            ReferencedContainer = "container:WeatherAPP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AB65E4C1BD69E4000169D3F"
-            BuildableName = "ConsumingJSON.app"
-            BlueprintName = "ConsumingJSON"
-            ReferencedContainer = "container:ConsumingJSON.xcodeproj">
+            BuildableName = "WeatherAPP.app"
+            BlueprintName = "WeatherAPP"
+            ReferencedContainer = "container:WeatherAPP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9AB65E4C1BD69E4000169D3F"
-            BuildableName = "ConsumingJSON.app"
-            BlueprintName = "ConsumingJSON"
-            ReferencedContainer = "container:ConsumingJSON.xcodeproj">
+            BuildableName = "WeatherAPP.app"
+            BlueprintName = "WeatherAPP"
+            ReferencedContainer = "container:WeatherAPP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

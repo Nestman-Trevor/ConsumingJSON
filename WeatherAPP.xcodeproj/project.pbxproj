@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9AB65E4D1BD69E4000169D3F /* ConsumingJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsumingJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB65E4D1BD69E4000169D3F /* WeatherAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB65E501BD69E4000169D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB65E521BD69E4000169D3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AB65E551BD69E4000169D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB65E571BD69E4000169D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB65E5A1BD69E4000169D3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AB65E5C1BD69E4000169D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AB65E611BD69E4000169D3F /* ConsumingJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsumingJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB65E611BD69E4000169D3F /* WeatherAPP.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAPP.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB65E651BD69E4000169D3F /* ConsumingJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumingJSONTests.swift; sourceTree = "<group>"; };
 		9AB65E671BD69E4000169D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AB65E6C1BD69E4000169D3F /* ConsumingJSONUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConsumingJSONUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB65E6C1BD69E4000169D3F /* WeatherAPP.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAPP.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB65E701BD69E4000169D3F /* ConsumingJSONUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumingJSONUITests.swift; sourceTree = "<group>"; };
 		9AB65E721BD69E4000169D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,9 @@
 		9AB65E4E1BD69E4000169D3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AB65E4D1BD69E4000169D3F /* ConsumingJSON.app */,
-				9AB65E611BD69E4000169D3F /* ConsumingJSONTests.xctest */,
-				9AB65E6C1BD69E4000169D3F /* ConsumingJSONUITests.xctest */,
+				9AB65E4D1BD69E4000169D3F /* WeatherAPP.app */,
+				9AB65E611BD69E4000169D3F /* WeatherAPP.xctest */,
+				9AB65E6C1BD69E4000169D3F /* WeatherAPP.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9AB65E4C1BD69E4000169D3F /* ConsumingJSON */ = {
+		9AB65E4C1BD69E4000169D3F /* WeatherAPP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AB65E751BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSON" */;
+			buildConfigurationList = 9AB65E751BD69E4000169D3F /* Build configuration list for PBXNativeTarget "WeatherAPP" */;
 			buildPhases = (
 				9AB65E491BD69E4000169D3F /* Sources */,
 				9AB65E4A1BD69E4000169D3F /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = ConsumingJSON;
+			name = WeatherAPP;
 			productName = ConsumingJSON;
-			productReference = 9AB65E4D1BD69E4000169D3F /* ConsumingJSON.app */;
+			productReference = 9AB65E4D1BD69E4000169D3F /* WeatherAPP.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9AB65E601BD69E4000169D3F /* ConsumingJSONTests */ = {
+		9AB65E601BD69E4000169D3F /* WeatherAPPTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AB65E781BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSONTests" */;
+			buildConfigurationList = 9AB65E781BD69E4000169D3F /* Build configuration list for PBXNativeTarget "WeatherAPPTests" */;
 			buildPhases = (
 				9AB65E5D1BD69E4000169D3F /* Sources */,
 				9AB65E5E1BD69E4000169D3F /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				9AB65E631BD69E4000169D3F /* PBXTargetDependency */,
 			);
-			name = ConsumingJSONTests;
+			name = WeatherAPPTests;
 			productName = ConsumingJSONTests;
-			productReference = 9AB65E611BD69E4000169D3F /* ConsumingJSONTests.xctest */;
+			productReference = 9AB65E611BD69E4000169D3F /* WeatherAPP.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9AB65E6B1BD69E4000169D3F /* ConsumingJSONUITests */ = {
+		9AB65E6B1BD69E4000169D3F /* WeatherAPPUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AB65E7B1BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSONUITests" */;
+			buildConfigurationList = 9AB65E7B1BD69E4000169D3F /* Build configuration list for PBXNativeTarget "WeatherAPPUITests" */;
 			buildPhases = (
 				9AB65E681BD69E4000169D3F /* Sources */,
 				9AB65E691BD69E4000169D3F /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				9AB65E6E1BD69E4000169D3F /* PBXTargetDependency */,
 			);
-			name = ConsumingJSONUITests;
+			name = WeatherAPPUITests;
 			productName = ConsumingJSONUITests;
-			productReference = 9AB65E6C1BD69E4000169D3F /* ConsumingJSONUITests.xctest */;
+			productReference = 9AB65E6C1BD69E4000169D3F /* WeatherAPP.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AB65E481BD69E4000169D3F /* Build configuration list for PBXProject "ConsumingJSON" */;
+			buildConfigurationList = 9AB65E481BD69E4000169D3F /* Build configuration list for PBXProject "WeatherAPP" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AB65E4C1BD69E4000169D3F /* ConsumingJSON */,
-				9AB65E601BD69E4000169D3F /* ConsumingJSONTests */,
-				9AB65E6B1BD69E4000169D3F /* ConsumingJSONUITests */,
+				9AB65E4C1BD69E4000169D3F /* WeatherAPP */,
+				9AB65E601BD69E4000169D3F /* WeatherAPPTests */,
+				9AB65E6B1BD69E4000169D3F /* WeatherAPPUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,12 +284,12 @@
 /* Begin PBXTargetDependency section */
 		9AB65E631BD69E4000169D3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9AB65E4C1BD69E4000169D3F /* ConsumingJSON */;
+			target = 9AB65E4C1BD69E4000169D3F /* WeatherAPP */;
 			targetProxy = 9AB65E621BD69E4000169D3F /* PBXContainerItemProxy */;
 		};
 		9AB65E6E1BD69E4000169D3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9AB65E4C1BD69E4000169D3F /* ConsumingJSON */;
+			target = 9AB65E4C1BD69E4000169D3F /* WeatherAPP */;
 			targetProxy = 9AB65E6D1BD69E4000169D3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,8 +406,7 @@
 				INFOPLIST_FILE = ConsumingJSON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nestmanCo.ConsumingJSON;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = WeatherAPP;
 			};
 			name = Debug;
 		};
@@ -420,8 +419,7 @@
 				INFOPLIST_FILE = ConsumingJSON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nestmanCo.ConsumingJSON;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = WeatherAPP;
 			};
 			name = Release;
 		};
@@ -432,8 +430,8 @@
 				INFOPLIST_FILE = ConsumingJSONTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nestmanCo.ConsumingJSONTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConsumingJSON.app/ConsumingJSON";
+				PRODUCT_NAME = WeatherAPP;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAPP.app/WeatherAPP";
 			};
 			name = Debug;
 		};
@@ -444,8 +442,8 @@
 				INFOPLIST_FILE = ConsumingJSONTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nestmanCo.ConsumingJSONTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConsumingJSON.app/ConsumingJSON";
+				PRODUCT_NAME = WeatherAPP;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherAPP.app/WeatherAPP";
 			};
 			name = Release;
 		};
@@ -455,7 +453,7 @@
 				INFOPLIST_FILE = ConsumingJSONUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nestmanCo.ConsumingJSONUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WeatherAPP;
 				TEST_TARGET_NAME = ConsumingJSON;
 				USES_XCTRUNNER = YES;
 			};
@@ -467,7 +465,7 @@
 				INFOPLIST_FILE = ConsumingJSONUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nestmanCo.ConsumingJSONUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WeatherAPP;
 				TEST_TARGET_NAME = ConsumingJSON;
 				USES_XCTRUNNER = YES;
 			};
@@ -476,7 +474,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AB65E481BD69E4000169D3F /* Build configuration list for PBXProject "ConsumingJSON" */ = {
+		9AB65E481BD69E4000169D3F /* Build configuration list for PBXProject "WeatherAPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB65E731BD69E4000169D3F /* Debug */,
@@ -485,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AB65E751BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSON" */ = {
+		9AB65E751BD69E4000169D3F /* Build configuration list for PBXNativeTarget "WeatherAPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB65E761BD69E4000169D3F /* Debug */,
@@ -494,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AB65E781BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSONTests" */ = {
+		9AB65E781BD69E4000169D3F /* Build configuration list for PBXNativeTarget "WeatherAPPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB65E791BD69E4000169D3F /* Debug */,
@@ -503,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AB65E7B1BD69E4000169D3F /* Build configuration list for PBXNativeTarget "ConsumingJSONUITests" */ = {
+		9AB65E7B1BD69E4000169D3F /* Build configuration list for PBXNativeTarget "WeatherAPPUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AB65E7C1BD69E4000169D3F /* Debug */,
