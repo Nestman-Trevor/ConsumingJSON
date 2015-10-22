@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var cityNameTextView: UITextField!
+    @IBOutlet weak var cityDidLoadLabel: UILabel!
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var cityTempLabel: UILabel!
     @IBAction func getDataButtonClicked(sender: AnyObject) {
-        getWeatherData("http://api.openweathermap.org/data/2.5/weather?q=\(cityNameTextView.text!)&APPID=616db91ad987939b66831bb8b6d3e9f4")
+        getWeatherData("http://api.openweathermap.org/data/2.5/weather?q=\(searchableCity(cityNameTextView.text!))&APPID=616db91ad987939b66831bb8b6d3e9f4")
         
     }
     override func viewDidLoad() {
@@ -26,6 +27,9 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func searchableCity(city: String) -> String{
+        return city.stringByReplacingOccurrencesOfString(" ", withString: "%20")
     }
 
     func getWeatherData(urlString: String) {
@@ -39,15 +43,17 @@ class ViewController: UIViewController {
 //        
 //        /*
         let url = NSURL(string: urlString)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            dispatch_async(dispatch_get_main_queue(), {
-                self.setLabels(data!) //Error here :fatal error: unexpectedly found nil while unwrapping ...
-            })
+        if url != nil{
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.setLabels(data!) //Error here :fatal error: unexpectedly found nil while unwrapping ...
+                    self.cityDidLoadLabel.text = "City loaded"
+                })
+            }
+            task.resume()
+        }else{
+            self.cityDidLoadLabel.text = "Poop, didn't load"
         }
-        
-        task.resume()
-        
     }
     
     func setLabels(weatherData: NSData){
